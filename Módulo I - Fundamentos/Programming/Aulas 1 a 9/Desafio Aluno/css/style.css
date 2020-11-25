@@ -1,0 +1,61 @@
+:root {
+  --color-white: white;
+  --color-black: black;
+  --primary-color: #00AFA2;
+  --primary-color-hover: #007975;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 64.5%;
+}
+
+body {
+  height: 100vh;
+  color: var(--color-white);
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary-color);
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 50rem;
+  padding: 1.5rem 5rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-white);
+}
+
+.chooseNumber {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-color-hover);
+}
+
+input {
+  width: 100%;
+  border: none;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: .8rem .5rem;
+  margin-bottom: 1.5rem;
+  background: transparent;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--primary-color-hover);
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: var(--color-black);
+}
