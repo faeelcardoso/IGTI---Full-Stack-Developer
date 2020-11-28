@@ -17,17 +17,17 @@
   <div class="container">
     <div class="box">
       <h2 class="chooseNumber">Escolha um número entre 0 e 000:</h2>
-      <input type="range" name="range-input" id="rangeInput" value="0" min="0" max="999">
+      <input type="range" name="range-input" id="rangeInput" value="0" step="1" min="0" max="999">
 
       <h2 class="current-number">Número atual:</h2>
-      <input type="text" name="range-input" id="currentNumber">
+      <input type="text" name="range-input" value="0" readoonly disabled id="currentNumber">
 
       <h2 class="number-por-extenso">Número por extenso:</h2>
-      <input type="text" name="range-input" id="extendNumber">
+      <input type="text" name="range-input" value="ZERO" readoonly disabled id="extendNumber">
     </div>
   </div>
 
-  <script src="./js/script.js"></script>
+  <script defer src="./js/script.js"></script> 
 </body>
 
 </html>
