@@ -1,0 +1,34 @@
+{
+  "members": [
+    {
+      "id": "m1",
+      "bandId": "b1",
+      "name": "Chester Bennington"
+    },
+    {
+      "id": "m2",
+      "bandId": "b1",
+      "name": "Mike Shinoda"
+    },
+    {
+      "id": "m3",
+      "bandId": "b1",
+      "name": "Brad Delson"
+    },
+    {
+      "id": "m4",
+      "bandId": "b2",
+      "name": "Dan Reynolds"
+    },
+    {
+      "id": "m5",
+      "bandId": "b2",
+      "name": "Ben McKee"
+    },
+    {
+      "id": "m6",
+      "bandId": "b2",
+      "name": "Wayne Wing Sermon"
+    }
+  ]
+}
