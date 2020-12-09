@@ -1,0 +1,11 @@
+npm init -y 
+Cria o backend com YES pra todas as opções
+
+Para executar no terminal passo: node + nome do arq + oq quero passar ex
+node index.js 100
+
+DEBUGGER
+
+- Colocar os breackpoints
+- criar o .vscode file (launch.json)
+- Debuggar 
