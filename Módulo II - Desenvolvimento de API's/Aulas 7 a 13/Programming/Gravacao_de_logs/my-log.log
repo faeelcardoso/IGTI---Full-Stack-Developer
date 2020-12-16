@@ -1,0 +1,32 @@
+2020-12-16T00:51:26.069Z [my-app] error: Error log
+2020-12-16T00:51:26.073Z [my-app] warn: Warn log
+2020-12-16T00:51:26.073Z [my-app] info: Info log
+2020-12-16T00:51:26.074Z [my-app] http: Http log
+2020-12-16T00:51:26.074Z [my-app] verbose: Verbose log
+2020-12-16T00:51:26.075Z [my-app] debug: Debug log
+2020-12-16T00:51:26.076Z [my-app] silly: Silly log
+2020-12-16T00:51:26.077Z [my-app] error: Error log specifying
+2020-12-16T00:51:57.188Z [my-app] error: Error log
+2020-12-16T00:51:57.192Z [my-app] warn: Warn log
+2020-12-16T00:51:57.192Z [my-app] info: Info log
+2020-12-16T00:51:57.192Z [my-app] http: Http log
+2020-12-16T00:51:57.193Z [my-app] verbose: Verbose log
+2020-12-16T00:51:57.193Z [my-app] debug: Debug log
+2020-12-16T00:51:57.194Z [my-app] silly: Silly log
+2020-12-16T00:51:57.195Z [my-app] error: Error log specifying
+2020-12-16T00:52:14.322Z [my-app] error: Error log
+2020-12-16T00:52:14.325Z [my-app] warn: Warn log
+2020-12-16T00:52:14.325Z [my-app] info: Info log
+2020-12-16T00:52:14.326Z [my-app] http: Http log
+2020-12-16T00:52:14.326Z [my-app] verbose: Verbose log
+2020-12-16T00:52:14.326Z [my-app] debug: Debug log
+2020-12-16T00:52:14.327Z [my-app] silly: Silly log
+2020-12-16T00:52:14.327Z [my-app] error: Error log specifying
+2020-12-16T00:53:37.548Z [my-app] error: Error log
+2020-12-16T00:53:37.551Z [my-app] warn: Warn log
+2020-12-16T00:53:37.552Z [my-app] info: Info log
+2020-12-16T00:53:37.553Z [my-app] http: Http log
+2020-12-16T00:53:37.553Z [my-app] verbose: Verbose log
+2020-12-16T00:53:37.554Z [my-app] debug: Debug log
+2020-12-16T00:53:37.555Z [my-app] silly: Silly log
+2020-12-16T00:53:37.555Z [my-app] error: Error log specifying
