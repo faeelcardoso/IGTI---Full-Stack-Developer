@@ -2,6 +2,8 @@ import express from 'express';
 import accountsRouter from './routes/accounts.js';
 import { promises as fileSystem } from 'fs';
 
+global.fileName = 'accounts.json';
+
 // desconstructuring
 const { readFile, writeFile } = fileSystem; // I take these methods that I'll need, to make it easier
 
@@ -13,15 +15,15 @@ app.use('/account', accountsRouter);
 
 app.listen(3000, async () => {
   try{ // trying read file
-    await readFile('accounts.json');
+    await readFile(global.fileName);
     console.log('API Started!');
   } catch(err) { // Don't exist? create it
     const initialJson = {
-      nextID: 1,
+      nextId: 1,
       accounts: []
     }
     try { // trying to write file
-      writeFile('accounts.json', JSON.stringify(initialJson));
+      writeFile(global.fileName, JSON.stringify(initialJson));
       console.log('API Started and File Created!');
     } catch(err) {
       console.log(err);
