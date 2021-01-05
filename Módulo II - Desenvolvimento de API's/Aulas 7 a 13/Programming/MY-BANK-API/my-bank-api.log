@@ -1,0 +1,64 @@
+2021-01-05T00:56:48.758Z [my-bank-api] info: API Started!
+2021-01-05T00:57:07.922Z [my-bank-api] info: API Started!
+2021-01-05T00:57:11.789Z [my-bank-api] info: API Started!
+2021-01-05T00:57:54.634Z [my-bank-api] info: API Started!
+2021-01-05T00:57:58.255Z [my-bank-api] info: API Started!
+2021-01-05T00:58:46.898Z [my-bank-api] info: API Started!
+2021-01-05T00:58:53.793Z [my-bank-api] info: API Started!
+2021-01-05T00:59:41.555Z [my-bank-api] info: API Started!
+2021-01-05T00:59:43.165Z [my-bank-api] info: API Started!
+2021-01-05T00:59:49.346Z [my-bank-api] info: API Started!
+2021-01-05T01:00:15.046Z [my-bank-api] info: API Started!
+2021-01-05T01:00:46.823Z [my-bank-api] info: API Started!
+2021-01-05T01:00:48.922Z [my-bank-api] info: API Started!
+2021-01-05T01:01:35.803Z [my-bank-api] info: API Started!
+2021-01-05T01:01:37.016Z [my-bank-api] info: API Started!
+2021-01-05T01:02:11.942Z [my-bank-api] info: API Started!
+2021-01-05T01:02:34.487Z [my-bank-api] info: API Started!
+2021-01-05T01:03:00.424Z [my-bank-api] info: API Started!
+2021-01-05T01:04:45.731Z [my-bank-api] info: API Started and File Created!
+2021-01-05T01:05:00.936Z [my-bank-api] info: POST /account - {"id":1,"name":"Alguém Marques","balance":1}
+2021-01-05T01:05:05.903Z [my-bank-api] info: GET /account
+2021-01-05T01:05:09.324Z [my-bank-api] info: GET /account [object Object]
+2021-01-05T01:05:37.186Z [my-bank-api] info: API Started!
+2021-01-05T01:05:40.371Z [my-bank-api] info: GET /account {"id":1,"name":"Alguém Marques","balance":1}
+2021-01-05T01:23:40.913Z [my-bank-api] info: API Started!
+2021-01-05T01:26:16.715Z [my-bank-api] info: API Started!
+2021-01-05T01:29:29.508Z [my-bank-api] info: API Started!
+2021-01-05T01:30:16.133Z [my-bank-api] info: API Started!
+2021-01-05T01:30:41.913Z [my-bank-api] error: POST undefined - Name and Balance are required!
+2021-01-05T01:30:51.312Z [my-bank-api] error: POST undefined - Name and Balance are required!
+2021-01-05T01:31:09.310Z [my-bank-api] info: GET /account
+2021-01-05T01:31:10.128Z [my-bank-api] info: GET /account
+2021-01-05T01:31:10.711Z [my-bank-api] info: GET /account
+2021-01-05T01:31:21.439Z [my-bank-api] info: POST /account - {"id":2,"name":"Someone Marques","balance":2000}
+2021-01-05T01:33:48.385Z [my-bank-api] info: API Started!
+2021-01-05T01:34:17.844Z [my-bank-api] info: API Started!
+2021-01-05T01:34:31.229Z [my-bank-api] info: API Started!
+2021-01-05T01:38:15.314Z [my-bank-api] info: API Started!
+2021-01-05T01:39:19.962Z [my-bank-api] info: API Started!
+2021-01-05T01:39:40.581Z [my-bank-api] info: API Started!
+2021-01-05T01:39:44.522Z [my-bank-api] info: API Started!
+2021-01-05T01:40:47.728Z [my-bank-api] info: API Started!
+2021-01-05T01:41:08.104Z [my-bank-api] info: POST /account - {"id":3,"name":"Someonee Marques","balance":0}
+2021-01-05T01:41:13.191Z [my-bank-api] info: DELETE /account/:id - 3
+2021-01-05T01:41:15.056Z [my-bank-api] info: DELETE /account/:id - 3
+2021-01-05T01:41:18.651Z [my-bank-api] info: GET /account
+2021-01-05T01:41:32.027Z [my-bank-api] info: POST /account - {"id":4,"name":"Someonee Marques","balance":""}
+2021-01-05T01:41:38.838Z [my-bank-api] info: GET /account
+2021-01-05T01:43:07.852Z [my-bank-api] info: API Started!
+2021-01-05T01:43:12.163Z [my-bank-api] info: API Started!
+2021-01-05T01:43:13.751Z [my-bank-api] info: API Started!
+2021-01-05T01:43:23.153Z [my-bank-api] info: DELETE /account/:id - 4
+2021-01-05T01:43:25.598Z [my-bank-api] info: GET /account
+2021-01-05T01:43:29.350Z [my-bank-api] error: POST undefined - Balance cannot be empty!
+2021-01-05T01:43:41.081Z [my-bank-api] error: POST undefined - Name and Balance are required!
+2021-01-05T01:43:49.805Z [my-bank-api] error: PUT undefined - Id, Name and Balance are required!
+2021-01-05T01:44:11.219Z [my-bank-api] info: API Started!
+2021-01-05T01:44:17.956Z [my-bank-api] info: API Started!
+2021-01-05T01:44:26.805Z [my-bank-api] info: API Started!
+2021-01-05T01:44:32.554Z [my-bank-api] error: PUT undefined - Balance cannot be empty!
+2021-01-05T01:44:44.530Z [my-bank-api] error: PUT undefined - Register not found!
+2021-01-05T01:45:24.781Z [my-bank-api] error: PATCH undefined - Balance cannot be empty!
+2021-01-05T01:45:33.521Z [my-bank-api] error: PATCH undefined - Register not found!
+2021-01-05T01:45:41.245Z [my-bank-api] error: PATCH undefined - Register not found!

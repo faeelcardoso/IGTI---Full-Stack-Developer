@@ -1,15 +1,15 @@
 {
-  "nextId": 4,
+  "nextId": 5,
   "accounts": [
     {
       "id": 1,
-      "name": "Raphael Marques",
-      "balance": 100
+      "name": "Alguém Marques",
+      "balance": 1
     },
     {
       "id": 2,
-      "name": "Muller Marques",
-      "balance": 100
+      "name": "Someone Marques",
+      "balance": 2000
     }
   ]
 }
