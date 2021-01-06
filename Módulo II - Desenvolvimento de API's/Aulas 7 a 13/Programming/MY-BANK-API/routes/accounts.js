@@ -1,5 +1,6 @@
 import express from 'express';
 import { promises as fileSystem } from 'fs';
+import cors from 'cors';
 
 const { readFile, writeFile } = fileSystem;
 
@@ -51,7 +52,7 @@ router.get('/', async (_, res, next) => {
   }
 });
 
-router.get('/:id', async (req, res, next) => {
+router.get('/:id', cors(), async (req, res, next) => { // Pay attention that has a "cors" here, so I'm sharing this req with another domain. Like that, I share just this domain
   try {
     const data = JSON.parse(await readFile(global.fileName));
     const accountID = data.accounts.find(account => account.id === parseInt(req.params.id));

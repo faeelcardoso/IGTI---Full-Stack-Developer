@@ -2,6 +2,7 @@ import express from 'express';
 import winston from 'winston';
 import accountsRouter from './routes/accounts.js';
 import { promises as fileSystem } from 'fs';
+//import cors from 'cors';
 
 global.fileName = 'accounts.json';
 
@@ -30,6 +31,12 @@ global.logger = winston.createLogger({
 
 const app = express();
 app.use(express.json());
+
+// Static Files
+app.use(express.static('public'));
+
+// CORS
+//app.use(cors()); // Like that, you allow every req
 
 // Always when being "/account", use this route
 app.use('/account', accountsRouter);

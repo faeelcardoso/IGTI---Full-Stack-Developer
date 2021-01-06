@@ -62,3 +62,62 @@
 2021-01-05T01:45:24.781Z [my-bank-api] error: PATCH undefined - Balance cannot be empty!
 2021-01-05T01:45:33.521Z [my-bank-api] error: PATCH undefined - Register not found!
 2021-01-05T01:45:41.245Z [my-bank-api] error: PATCH undefined - Register not found!
+2021-01-05T22:47:43.273Z [my-bank-api] info: API Started!
+2021-01-05T22:47:49.363Z [my-bank-api] info: GET /account
+2021-01-05T22:47:53.196Z [my-bank-api] info: GET /account
+2021-01-05T22:48:07.562Z [my-bank-api] info: GET /account
+2021-01-05T22:53:07.176Z [my-bank-api] info: GET /account
+2021-01-05T22:54:39.288Z [my-bank-api] info: API Started!
+2021-01-05T22:54:56.207Z [my-bank-api] info: API Started!
+2021-01-05T22:55:26.814Z [my-bank-api] info: API Started!
+2021-01-05T22:55:36.250Z [my-bank-api] info: API Started!
+2021-01-05T22:55:41.886Z [my-bank-api] info: GET /account
+2021-01-05T22:55:56.922Z [my-bank-api] info: API Started!
+2021-01-05T22:56:12.734Z [my-bank-api] info: API Started!
+2021-01-05T22:56:24.179Z [my-bank-api] info: GET /account
+2021-01-05T22:56:24.681Z [my-bank-api] info: GET /account
+2021-01-05T22:56:25.126Z [my-bank-api] info: GET /account
+2021-01-05T22:56:25.316Z [my-bank-api] info: GET /account
+2021-01-05T22:56:25.640Z [my-bank-api] info: GET /account
+2021-01-05T22:56:25.764Z [my-bank-api] info: GET /account
+2021-01-05T22:56:25.971Z [my-bank-api] info: GET /account
+2021-01-05T22:56:41.629Z [my-bank-api] info: API Started!
+2021-01-05T22:56:45.824Z [my-bank-api] info: GET /account
+2021-01-05T22:56:46.368Z [my-bank-api] info: GET /account
+2021-01-05T22:56:46.706Z [my-bank-api] info: GET /account
+2021-01-05T22:56:47.005Z [my-bank-api] info: GET /account
+2021-01-05T22:56:47.201Z [my-bank-api] info: GET /account
+2021-01-05T22:56:58.785Z [my-bank-api] info: GET /account
+2021-01-05T22:57:01.903Z [my-bank-api] info: GET /account
+2021-01-05T22:57:16.812Z [my-bank-api] info: GET /account
+2021-01-05T22:57:17.258Z [my-bank-api] info: GET /account
+2021-01-05T22:58:16.125Z [my-bank-api] info: API Started!
+2021-01-05T22:58:19.019Z [my-bank-api] info: API Started!
+2021-01-05T22:58:54.078Z [my-bank-api] info: API Started!
+2021-01-05T22:58:56.240Z [my-bank-api] info: GET /account
+2021-01-05T22:58:56.382Z [my-bank-api] info: GET /account
+2021-01-05T22:58:56.680Z [my-bank-api] info: GET /account
+2021-01-05T22:59:08.210Z [my-bank-api] info: API Started!
+2021-01-05T22:59:09.083Z [my-bank-api] info: API Started!
+2021-01-05T22:59:18.324Z [my-bank-api] info: API Started!
+2021-01-05T22:59:31.231Z [my-bank-api] info: GET /account
+2021-01-05T22:59:31.408Z [my-bank-api] info: GET /account
+2021-01-05T22:59:40.250Z [my-bank-api] info: API Started!
+2021-01-05T22:59:54.895Z [my-bank-api] info: API Started!
+2021-01-05T23:00:02.762Z [my-bank-api] info: API Started!
+2021-01-05T23:00:03.888Z [my-bank-api] info: API Started!
+2021-01-05T23:00:05.644Z [my-bank-api] info: GET /account
+2021-01-05T23:00:05.854Z [my-bank-api] info: GET /account
+2021-01-05T23:00:21.063Z [my-bank-api] info: GET /account {"id":1,"name":"Alguém Marques","balance":1}
+2021-01-05T23:00:21.659Z [my-bank-api] info: GET /account {"id":1,"name":"Alguém Marques","balance":1}
+2021-01-05T23:00:21.800Z [my-bank-api] info: GET /account {"id":1,"name":"Alguém Marques","balance":1}
+2021-01-05T23:00:32.734Z [my-bank-api] info: API Started!
+2021-01-05T23:00:36.352Z [my-bank-api] info: API Started!
+2021-01-05T23:00:37.346Z [my-bank-api] info: GET /account {"id":1,"name":"Alguém Marques","balance":1}
+2021-01-05T23:00:37.947Z [my-bank-api] info: GET /account {"id":1,"name":"Alguém Marques","balance":1}
+2021-01-05T23:01:03.547Z [my-bank-api] info: API Started!
+2021-01-05T23:01:08.694Z [my-bank-api] info: API Started!
+2021-01-05T23:02:06.763Z [my-bank-api] info: API Started!
+2021-01-05T23:04:44.910Z [my-bank-api] info: API Started!
+2021-01-05T23:04:48.762Z [my-bank-api] info: API Started!
+2021-01-05T23:04:58.502Z [my-bank-api] info: API Started!
