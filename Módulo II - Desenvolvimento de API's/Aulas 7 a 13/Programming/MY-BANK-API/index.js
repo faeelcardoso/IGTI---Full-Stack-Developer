@@ -2,6 +2,8 @@ import express from 'express';
 import winston from 'winston';
 import accountsRouter from './routes/accounts.js';
 import { promises as fileSystem } from 'fs';
+import swaggerUi from 'swagger-ui-express';
+import {swaggerDocument} from './doc.js';
 //import cors from 'cors';
 
 global.fileName = 'accounts.json';
@@ -40,6 +42,10 @@ app.use(express.static('public'));
 
 // Always when being "/account", use this route
 app.use('/account', accountsRouter);
+
+// SWAGGER
+app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerDocument)); 
+// ISSO É MUITO FODA, VAI EM PT-BR FODAS
 
 app.listen(3000, async () => {
   try{ // trying read file

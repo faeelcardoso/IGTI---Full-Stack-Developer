@@ -121,3 +121,20 @@
 2021-01-05T23:04:44.910Z [my-bank-api] info: API Started!
 2021-01-05T23:04:48.762Z [my-bank-api] info: API Started!
 2021-01-05T23:04:58.502Z [my-bank-api] info: API Started!
+2021-01-06T23:38:06.503Z [my-bank-api] info: API Started!
+2021-01-06T23:48:03.145Z [my-bank-api] info: API Started!
+2021-01-06T23:49:35.578Z [my-bank-api] info: API Started!
+2021-01-06T23:49:52.385Z [my-bank-api] info: API Started!
+2021-01-06T23:49:56.658Z [my-bank-api] info: API Started!
+2021-01-06T23:55:52.384Z [my-bank-api] info: API Started!
+2021-01-06T23:56:54.149Z [my-bank-api] info: GET /account
+2021-01-06T23:56:55.888Z [my-bank-api] info: GET /account
+2021-01-06T23:57:06.791Z [my-bank-api] info: GET /account
+2021-01-06T23:57:30.922Z [my-bank-api] info: GET /account
+2021-01-06T23:58:16.861Z [my-bank-api] info: POST /account - {"id":5,"name":"Testando","balance":"1.000"}
+2021-01-06T23:58:36.276Z [my-bank-api] info: GET /account
+2021-01-06T23:59:05.061Z [my-bank-api] info: API Started!
+2021-01-06T23:59:09.580Z [my-bank-api] info: GET /account
+2021-01-06T23:59:15.587Z [my-bank-api] info: DELETE /account/:id - 5
+2021-01-06T23:59:20.232Z [my-bank-api] info: GET /account
+2021-01-06T23:59:25.812Z [my-bank-api] info: GET /account
