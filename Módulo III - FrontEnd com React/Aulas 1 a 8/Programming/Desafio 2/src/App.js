@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import Countries from './components/countries/Countries';
 import Header from './components/header/Header';
 
+import css from './app.module.css'
+
 export default class App extends Component {
   constructor() {
     super();
@@ -70,7 +72,7 @@ export default class App extends Component {
 
     return (
       <div className="container">
-        <h1>React Countries</h1>
+        <h1 className={css.centralized}>React Countries</h1>
         <Header filter={filter} countryCount={filteredCountries.length} totalPopulation={filteredPopulation} onChangeFilter={this.handleChangeFilter} />
 
         <Countries countries={ filteredCountries } />
