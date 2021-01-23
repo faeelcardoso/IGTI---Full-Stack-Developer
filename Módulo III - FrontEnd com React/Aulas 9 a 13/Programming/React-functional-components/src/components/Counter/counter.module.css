@@ -1,0 +1,11 @@
+/*When you are using modules.css, you have to name for JSX, without "-" */
+
+.counterContainer {
+  padding: 10px;
+  font-size: 1.2rem;
+  font-family: Consolas, monospace;
+}
+
+.counterValue {
+  padding: 10px;
+}
