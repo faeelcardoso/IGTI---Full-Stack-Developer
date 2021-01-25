@@ -25,7 +25,7 @@ export default class App extends Component {
 
   render() {
     const { currentCounter, steps } = this.state;
-    
+
     return (
       <Fragment>
         <h3>React Counter Functional Component</h3>
