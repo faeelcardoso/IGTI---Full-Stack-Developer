@@ -82,6 +82,15 @@ function fillCandidates() {
       percentage: 0,
       popularity: CONSTS.MIN_POPULARITY,
     },
+
+    {
+      id: 4,
+      name: 'Seiya',
+      votes: 0,
+      previousVotes: 0,
+      percentage: 0,
+      popularity: CONSTS.MIN_POPULARITY,
+    },
   ];
 }
 
@@ -124,8 +133,7 @@ function simulatePopularity() {
 app.get('/', (_, res) => {
   res.json({
     message:
-      'Bem-vindo ao módulo de votação!' +
-      'Acesse /votes para visualizar a votação em tempo real.',
+      'Bem-vindo ao módulo de votação! Acesse /votes para visualizar a votação em tempo real.',
   });
 });
 
