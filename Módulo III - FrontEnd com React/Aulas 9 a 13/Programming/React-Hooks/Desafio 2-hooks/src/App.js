@@ -1,46 +1,41 @@
-import React, { Component } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Countries from './components/countries/Countries';
 import Header from './components/header/Header';
 
-import css from './app.module.css'
+import css from './app.module.css';
 
-export default class App extends Component {
-  constructor() {
-    super();
+export default function App() {
+  const [allCountries, setAllCountries] = useState([]);
+  const [filteredCountries, setFilteredCountries] = useState([]);
+  const [filteredPopulation, setFilteredPopulation] = useState(0);
+  const [userFilter, setUserFilter] = useState(''); // Always you work with Input, never put null or undefined
 
-    this.state = {
-      allCountries: [],
-      filteredCountries: [],
-      filteredPopulation: 0,
-      filter: '', // Always you work with Input, never put null or undefined
+  // Robin Wieruch, JS reference
+
+  useEffect(() => {
+    const getCountries = async () => {
+      const res = await fetch('https://restcountries.eu/rest/v2/all');
+      let allCountries = await res.json();
+
+      allCountries = allCountries.map(({ name, numericCode, flag, population }) => {
+        return {
+          id: numericCode,
+          name,
+          filterName: name.toLowerCase(),
+          flag,
+          population,
+        }
+      });
+
+      setAllCountries(allCountries);
+      setFilteredCountries(Object.assign([], allCountries));
     }
-  }
 
-  async componentDidMount() {
-    const res = await fetch('https://restcountries.eu/rest/v2/all');
-    const json = await res.json();
+    getCountries();
+  }, []);
 
-    const allCountries = json.map(({ name, numericCode, flag, population }) => {
-      return {
-        id: numericCode,
-        name,
-        filterName: name.toLowerCase(),
-        flag,
-        population,
-      }
-    });
-
-    const filteredPopulation = this.calculateTotalPopulationFrom(allCountries); // Calc from All Coutries
-
-    this.setState({
-      allCountries, // allCountries: allCountries
-      filteredCountries: Object.assign([], allCountries),
-      filteredPopulation,
-    });
-  }
-
-  calculateTotalPopulationFrom = (countries) => {
+  const calculateTotalPopulationFrom = (countries) => {
     const totalPopulation = countries.reduce((acc, curr) => {
       return acc + curr.population;
     }, 0);
@@ -48,35 +43,27 @@ export default class App extends Component {
     return totalPopulation;
   }
 
-  handleChangeFilter = (newText) => {
-    this.setState({
-      filter: newText,
-    });
+  const handleChangeFilter = (newText) => {
+    setUserFilter(newText);
 
     const filterLowerCase = newText.toLowerCase();
 
-    const filteredCountries = this.state.allCountries.filter((country) => {
+    const filteredCountries = allCountries.filter((country) => {
       return country.filterName.includes(filterLowerCase);
     });
 
-    const filteredPopulation = this.calculateTotalPopulationFrom(filteredCountries); // Calc from just filtered countries
+    const filteredPopulation = calculateTotalPopulationFrom(filteredCountries); // Calc from just filtered countries
 
-    this.setState({
-      filteredCountries,
-      filteredPopulation
-    });
+    setFilteredCountries(filteredCountries);
+    setFilteredPopulation(filteredPopulation);
   }
-
-  render() {
-    const { filteredCountries, filter, filteredPopulation } = this.state;
 
     return (
       <div className="container">
         <h1 className={css.centralized}>React Countries</h1>
-        <Header filter={filter} countryCount={filteredCountries.length} totalPopulation={filteredPopulation} onChangeFilter={this.handleChangeFilter} />
+        <Header filter={userFilter} countryCount={filteredCountries.length} totalPopulation={filteredPopulation} onChangeFilter={handleChangeFilter} />
 
         <Countries countries={ filteredCountries } />
       </div>
     );
-  }
 }

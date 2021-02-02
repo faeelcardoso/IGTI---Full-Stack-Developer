@@ -1,38 +1,20 @@
-import React, { Component } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import User from './User';
 
-export default class Users extends Component {
-  constructor() {
-    super();
+export default function Users(props) {
+  const { users } = props;
 
-    this.state = {
-      secondsVisible: 0,
-    }
-
-    this.inverval = null;
-  }
-
-  componentDidMount() { 
-    console.log('componentDidMount de Users.js');
-
-    this.inverval = setInterval(() => {
-      const {secondsVisible} = this.state;
-
-      this.setState({
-        secondsVisible: secondsVisible + 1
-      });
+  const [secondsVisible, setSecondsVisible] = useState(0);
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSecondsVisible(secondsVisible + 1);
     }, 1000);
-  }
-
-  componentWillUnmount() {
-    console.log('componentWillUnmount de App.js');
-    clearInterval(this.inverval); // Desfacendo o interval do didMount
-  }
-
-  render() {
-    const {users} = this.props;
-    const {secondsVisible} = this.state;
+    return () => {
+      clearInterval(interval);
+    }
+  }, [secondsVisible]);
     
     return (
       <div>
@@ -49,5 +31,4 @@ export default class Users extends Component {
         </ul>
       </div>
     );
-  }
 }
