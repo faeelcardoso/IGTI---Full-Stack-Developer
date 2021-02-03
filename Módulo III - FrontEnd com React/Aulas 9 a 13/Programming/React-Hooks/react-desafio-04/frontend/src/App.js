@@ -1,7 +1,29 @@
-import React, { Component } from 'react';
+import React, { useEffect, useState } from 'react';
 
-export default class App extends Component {
-  render() {
-    return <h1>Hello Hooks!</h1>;
-  }
+import * as api from './api/apiServices';
+
+export default function App() {
+  const [allGrades, setAllGrades] = useState([]);
+  const [selectedGrade, setSelectedGrade] = useState({});
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    const getGrades = async () => {
+      const grades = await api.getAllGrades(); 
+      setTimeout(() => {
+        setAllGrades(grades); // When grades is ready, show then
+      }, 2000);
+    }
+
+    getGrades();
+  }, [])
+
+  return(
+    <div>
+      <h1 className='center'>Controle de Notas</h1>
+
+      {allGrades.length > 0 && <p>Notas disponíveis!</p>} 
+      {allGrades.length == 0 && <p>Carregando notas...</p>}
+    </div>
+  );
 }
