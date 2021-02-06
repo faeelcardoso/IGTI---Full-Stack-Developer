@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import * as api from './api/apiServices';
 import GradesControl from './components/GradesControl';
+import ModalGrade from './components/ModalGrade';
 
 import Spinner from './components/Spinner';
 
@@ -12,7 +13,7 @@ export default function App() {
 
   useEffect(() => {
     const getGrades = async () => {
-      const grades = await api.getAllGrades(); 
+      const grades = await api.getAllGrades();
       setTimeout(() => {
         setAllGrades(grades); // When grades is ready, show then
       }, 2000);
@@ -21,15 +22,55 @@ export default function App() {
     getGrades();
   }, [])
 
-  const handleDelete = () => {
-    console.log('handleDelete');
+  const handleDelete = async (gradeToDelete) => {
+    const isDeleted = await api.deleteGrade(gradeToDelete);
+
+    if (isDeleted) {
+      const deletedGradeIndex = allGrades.findIndex((grade) => grade.id === gradeToDelete.id);
+
+      const newGrades = Object.assign([], allGrades);
+      newGrades[deletedGradeIndex].isDeleted = true;
+      newGrades[deletedGradeIndex].value = 0;
+
+      setAllGrades(newGrades);
+    }
   }
 
-  const handlePersist = () => {
-    console.log('handlePersist');
+  const handlePersist = (grade) => {
+    setSelectedGrade(grade);
+    setIsModalOpen(true);
   }
 
-  return(
+  // When I have time, make two modals, one window to edit and add, one window to delete
+  // handlePersistDelete = () => {
+  //   setIsModalOpen(true);
+  // }
+
+  const handlePersistData = async (formData) => {
+    const { id, newValue } = formData;
+
+    const newGrades = Object.assign([], allGrades);
+
+    const gradesToPersist = newGrades.find((grade) => grade.id === id);
+    gradesToPersist.value = newValue;
+
+    // add and edit grade
+    if (gradesToPersist.isDeleted) {
+      gradesToPersist.isDeleted = false;
+      await api.insertGrade(gradesToPersist);
+    } else {
+      await api.upgradeGrade(gradesToPersist);
+    }
+
+    setIsModalOpen(false);
+  }
+  
+  const handleClose = () => {
+    setIsModalOpen(false);
+  }
+
+
+  return (
     <div>
       <h1 className='center'>Controle de Notas</h1>
 
@@ -38,6 +79,8 @@ export default function App() {
       {allGrades.length > 0 && (
         <GradesControl grades={allGrades} onDelete={handleDelete} onPersist={handlePersist} />
       )}
+
+      {isModalOpen && <ModalGrade onSave={handlePersistData} onClose={handleClose} selectedGrade={selectedGrade} />}
     </div>
   );
 }

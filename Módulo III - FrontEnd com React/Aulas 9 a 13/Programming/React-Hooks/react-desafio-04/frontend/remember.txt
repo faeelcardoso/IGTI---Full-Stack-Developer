@@ -1,0 +1,2 @@
+I'm using react-modal with 'yarn add react-modal'
+Modal is a window that always will open when I wanna add, delete or edit something

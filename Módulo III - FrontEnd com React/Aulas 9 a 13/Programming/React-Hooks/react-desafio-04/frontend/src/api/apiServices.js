@@ -17,7 +17,7 @@ const GRADE_VALIDATION = [
   },
   {
     id: 3,
-    gradeType: 'Desafios',
+    gradeType: 'Desafio',
     minValue: 0,
     maxValue: 50,
   },
