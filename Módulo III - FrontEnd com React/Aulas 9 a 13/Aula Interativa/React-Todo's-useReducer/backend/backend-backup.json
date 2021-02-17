@@ -948,7 +948,7 @@
       "period": "2021-02",
       "date": "2021-02-22",
       "description": "Pagar conta de telefone",
-      "done": true
+      "done": false
     },
     {
       "id": "0744bb05-dd3a-41be-9924-0332ac6bdeb4",
@@ -1058,7 +1058,7 @@
       "period": "2021-02",
       "date": "2021-02-25",
       "description": "Estudar Heroku",
-      "done": false
+      "done": true
     },
     {
       "id": "0802663d-ee77-4c44-be70-831a882a76e2",
@@ -1298,7 +1298,7 @@
       "period": "2021-02",
       "date": "2021-02-18",
       "description": "Pagar conta de luz",
-      "done": false
+      "done": true
     },
     {
       "id": "09d005ae-3181-4919-9f81-2612933d2998",

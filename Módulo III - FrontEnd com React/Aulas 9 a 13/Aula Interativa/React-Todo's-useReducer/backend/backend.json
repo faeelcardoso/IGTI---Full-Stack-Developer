@@ -398,7 +398,7 @@
       "period": "2021-02",
       "date": "2021-02-21",
       "description": "Meditar",
-      "done": false
+      "done": true
     },
     {
       "id": "038c2cba-7c64-4aef-8b37-880789b1dd3e",
@@ -938,7 +938,7 @@
       "period": "2021-02",
       "date": "2021-02-03",
       "description": "Estudar Node",
-      "done": false
+      "done": true
     },
     {
       "id": "074060ad-3848-4f90-b805-f9b33b7fdcdb",
@@ -1058,7 +1058,7 @@
       "period": "2021-02",
       "date": "2021-02-25",
       "description": "Estudar Heroku",
-      "done": false
+      "done": true
     },
     {
       "id": "0802663d-ee77-4c44-be70-831a882a76e2",
@@ -1178,7 +1178,7 @@
       "period": "2021-02",
       "date": "2021-02-23",
       "description": "Fazer exercícios físicos",
-      "done": false
+      "done": true
     },
     {
       "id": "09000e09-dd5b-481f-8dd9-9bb993da7331",
@@ -3698,7 +3698,7 @@
       "period": "2021-02",
       "date": "2021-02-18",
       "description": "Ir ao shopping",
-      "done": true
+      "done": false
     },
     {
       "id": "1c85d534-198b-44fd-a1f8-982a2087a46c",
@@ -4548,7 +4548,7 @@
       "period": "2021-02",
       "date": "2021-02-08",
       "description": "Fazer exercícios físicos",
-      "done": true
+      "done": false
     },
     {
       "id": "22aee33c-6f1e-49af-b976-fc5284bcebb1",
@@ -4738,7 +4738,7 @@
       "period": "2021-02",
       "date": "2021-02-11",
       "description": "Pagar conta de luz",
-      "done": true
+      "done": false
     },
     {
       "id": "243a6d42-594e-44a8-8b65-1bbbc52c2261",
@@ -4928,7 +4928,7 @@
       "period": "2021-02",
       "date": "2021-02-07",
       "description": "Pagar conta de luz",
-      "done": true
+      "done": false
     },
     {
       "id": "2567f9c7-429b-4946-bfd0-7b99d3551cdd",
@@ -5668,7 +5668,7 @@
       "period": "2021-02",
       "date": "2021-02-02",
       "description": "Jogar videogame",
-      "done": false
+      "done": true
     },
     {
       "id": "2b3ff9d3-8032-49c9-96cc-2a65678d5914",
