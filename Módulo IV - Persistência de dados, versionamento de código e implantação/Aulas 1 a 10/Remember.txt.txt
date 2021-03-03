@@ -1,0 +1,16 @@
+Inicializing
+Create a paste "data"
+ON Command Prompt: mongod --dbpath "your path"
+
+Now How to connect on my server 
+ON Command Prompt: mongo -host localhost:"door", it may be door 27017
+
+
+
+Commands:
+db.help() = Show a list of commands
+show dbs = Show my all bases created
+db = Show which bank I'm at the moment
+use "name of your base" = Create or use one base
+db.dropDatabase() = Delete permanently my base
+
